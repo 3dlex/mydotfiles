@@ -5,9 +5,6 @@
 
 
 " First line here:
-" This may no longer be needed.
-set nocompatible
-
 " Set text highlighting.
 syntax on
 
