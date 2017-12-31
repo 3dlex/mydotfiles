@@ -1,10 +1,10 @@
 " My first minimal vimrc file
 "
 " Author:       Matthew Davidson
-" Last change:  12-30-2017
+" Last change:  12-31-2017
 
 
-" First line here:
+" Customizations begin now:
 " Set text highlighting.
 syntax on
 
