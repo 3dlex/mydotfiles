@@ -1,4 +1,2 @@
 # mydotfiles
-My . files for my Debian desktops. 
-
-Currently: Debian 9
+My dot files for my Debian 9 desktops. 
