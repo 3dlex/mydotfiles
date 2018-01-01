@@ -1,6 +1,17 @@
-#!/bin/bash
-#
+#!/usr/bin/env bash
+
+########################################################
 #Simple script to put updated files in place.
+#
+version="1.0.0"
+#
+#
+# History:
+#
+# * DATE - v1.0.0 - First Creation
+#
+########################################################
+
 
 
 diff bash_aliases /home/$USER/.bash_aliases
