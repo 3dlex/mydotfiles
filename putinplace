@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#Simple script to put updated files in place.
+
+
+diff bash_aliases /home/$USER/.bash_aliases
+if [ $? -eq 0 ]; then
+	echo "bash_aliases does not need to be copied."
+else
+	cp bash_aliases /home/$USER/.bash_aliases
+	echo "New bash_aliases copied."
+fi
+
+diff  vimrc /home/$USER/.vimrc
+if [ $? -eq 0 ]; then
+	echo "vimrc does not need to be copied."
+else
+	cp vimrc /home/$USER/.vimrc
+	echo "New vimrc copied."
+fi
