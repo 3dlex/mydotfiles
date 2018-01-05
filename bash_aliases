@@ -1,5 +1,15 @@
 #!/usr/bin/bash
-#Debian 9
+###############
+#
+#Script currently can determine the following distros.
+# on which to setup on. 
+# - CentOS
+# - Debian
+# - Ubuntu
+# Created: 01-01-2018
+# Last update: 01-04-2018
+###############
+
 #custom aliases
 alias ll='ls -l'
 alias la='ls -A'
