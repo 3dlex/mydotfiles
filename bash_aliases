@@ -17,7 +17,7 @@ alias l='ls -CF'
 
 #Simplify updates.
 os=`awk '/^ID=/' /etc/*-release | sed s/\"//g | awk -F'=' '{ print tolower($2) }'`
-if [ $os = "ubuntu" ] || or [ $os = "debian" ]; then
+if [ $os = "ubuntu" ] || [ $os = "debian" ]; then
 	alias apt-get='sudo apt-get'
 	alias update='sudo apt-get update && sudo apt-get upgrade'
 elif [ $os = "centos" ]; then
