@@ -16,6 +16,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 #Simplify updates.
+#Determine O/S to set to either apt or yum
 os=`awk '/^ID=/' /etc/*-release | sed s/\"//g | awk -F'=' '{ print tolower($2) }'`
 if [ $os = "ubuntu" ] || [ $os = "debian" ]; then
 	alias apt-get='sudo apt-get'
