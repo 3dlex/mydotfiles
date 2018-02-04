@@ -1,12 +1,23 @@
 " My first minimal vimrc file
 "
 " Author:       Matthew Davidson
-" Last change:  12-31-2017
+" Created:  12-31-2017
+" Last change:  02-02-2018
 
 
 " Customizations begin now:
 " Set text highlighting.
 syntax on
+
+" Set 'nocompatible' to ward off unexpected things a distro might
+" have made.
+set nocompatible
+
+" Turn off bells
+set visualbell
+
+" Set history to 100
+set history=100
 
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on

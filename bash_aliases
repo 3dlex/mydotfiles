@@ -14,6 +14,7 @@
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias weather='python /home/$USER/bin/weather.py'
 
 #Simplify updates.
 #Determine O/S to set to either apt or yum
