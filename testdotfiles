@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Read and source our dotfiles
+
+#for DOTFILE in `find /home/$USER/test/`
+#do
+#	[ -f "$DOTFILE" ] && ls -l "$DOTFILE"
+#done
+
+if [ ! -L /home/$USER/.ssh/config ] && [ -f /home/$USER/Documents/.ssh/config ]; then
+	echo "File not found!"
+	ln -s /home/$USER/Documents/.ssh/config /home/$USER/.ssh/config
+fi

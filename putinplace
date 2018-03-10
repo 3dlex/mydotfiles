@@ -18,8 +18,17 @@ diff bash_aliases /home/$USER/.bash_aliases
 if [ $? -eq 0 ]; then
 	echo "bash_aliases does not need to be copied."
 else
-	cp bash_aliases /home/$USER/.bash_aliases
+	#cp bash_aliases /home/$USER/.bash_aliases
+	cp bash_aliases /home/$USER/bin/mydotfiles/files/.bash_aliases
 	echo "New bash_aliases copied."
+fi
+
+diff ssh_setup /home/$USER/bin/mydotfiles/files/.ssh_setup
+if [ $? -eq 0 ]; then
+	echo "ssh_config does not need to be copied."
+else
+	cp ssh_setup /home/$USER/bin/mydotfiles/files/.ssh_setup
+	echo "New ssh config copied."
 fi
 
 diff  vimrc /home/$USER/.vimrc
