@@ -7,7 +7,15 @@
 #	[ -f "$DOTFILE" ] && ls -l "$DOTFILE"
 #done
 
-if [ ! -L /home/$USER/.ssh/config ] && [ -f /home/$USER/Documents/.ssh/config ]; then
-	echo "File not found!"
-	ln -s /home/$USER/Documents/.ssh/config /home/$USER/.ssh/config
-fi
+##
+#Add to bashrc
+#Read and source our dotfiles
+#if [ -f ~/.bash_aliases ]; then
+#    . ~/.bash_aliases > /dev/null 2>&1
+#fi
+#Future?
+for DOTFILE in `find /home/$USER/bin/mydotfiles/files`
+do
+	[ -f "$DOTFILE" ] && source "$DOTFILE" > /dev/null 2>&1
+done
+
