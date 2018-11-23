@@ -1,6 +1,0 @@
-# setup my ssh configuration
-# ssh setup is contingent of owncloud being setup
-# on the localhost
-if [ ! -L /home/$USER/.ssh/config ] && [ -f /home/$USER/Documents/.ssh/config ]; then
-        ln -s /home/$USER/Documents/.ssh/config /home/$USER/.ssh/config
-fi
